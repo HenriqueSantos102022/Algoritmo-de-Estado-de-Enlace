@@ -6,7 +6,7 @@
 
 import sys
 import os
-from typing import List, Optional
+from typing import List
 
 # Cores para output
 class Colors:
