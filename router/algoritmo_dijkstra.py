@@ -4,9 +4,7 @@
 # entre roteadores de rede usando o algoritmo de Dijkstra. Ele processa um 
 # Banco de Dados de Estado de Link (LSDB) para produzir tabelas de roteamento.
 
-from typing import Dict, Any, Set, Optional
-import json
-from collections import defaultdict
+from typing import Dict, Any, Set
 
 def dijkstra(source_router: str, lsdb: Dict[str, Any]) -> Dict[str, str]:
     """
