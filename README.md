@@ -80,7 +80,7 @@ Passo a Passo para executar o trabalho
   make up
 ```
 
-##### 4. Tempo de convergência: Após o início dos containers, aguarde aproximadamente um minuto para que as tabelas de roteamento sejam configuradas entre os roteadores.
+##### 4. Tempo de convergência: Após o início dos containers, aguarde um pouco para que as tabelas de roteamento sejam configuradas entre os roteadores.
 
 #### 5. Faça a verificação da tabela de roteamento:
 
