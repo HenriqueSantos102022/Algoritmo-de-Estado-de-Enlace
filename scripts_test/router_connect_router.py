@@ -5,10 +5,8 @@
 # funcionalidade de roteamento adequada em toda a topologia.
 
 import os
-import sys
-import threading
 import time
-from typing import List, Tuple, Dict, Any
+from typing import List, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Cores para output
