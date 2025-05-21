@@ -10,8 +10,7 @@ import socket
 import threading
 import time
 import subprocess
-from typing import Dict, Tuple, Any, List, Set
-from functools import partial
+from typing import Dict, Tuple, Any
 from formatador import Formatter
 from algoritmo_dijkstra import dijkstra
 
