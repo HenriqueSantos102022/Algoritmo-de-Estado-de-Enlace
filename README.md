@@ -125,7 +125,6 @@ Passo a Passo para executar o trabalho
 Optou-se pelo uso do protocolo UDP para a troca de informações entre roteadores devido às suas características que favorecem desempenho e simplicidade na comunicação de estado de enlace:
 
 - Menor latência e overhead: O UDP é um protocolo sem conexão, o que elimina a necessidade de handshake e reduz a sobrecarga nos pacotes trocados.
-- Adequado para tempo real: Em cenários como o roteamento dinâmico, a perda eventual de um pacote é aceitável, desde que as atualizações sejam frequentes e rápidas.
 - Desempenho otimizado para mensagens curtas: Como os pacotes de atualização de roteamento são pequenos e transmitidos periodicamente, o UDP se encaixa perfeitamente nesse tipo de tráfego.
 - Facilidade no envio para múltiplos roteadores: O suporte nativo a multicast torna o UDP ideal para distribuir as atualizações simultaneamente a todos os vizinhos.
 - Transmissão contínua mesmo sob carga: Por não implementar mecanismos de controle de congestionamento, o UDP permite que as mensagens de atualização continuem sendo enviadas mesmo quando a rede estiver sobrecarregada.
