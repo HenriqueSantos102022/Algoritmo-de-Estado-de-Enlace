@@ -5,10 +5,8 @@
 # entre sub-redes distintas opere corretamente.
 
 import os
-import sys
-import threading
 import time
-from typing import List, Tuple, Dict, Any, Optional
+from typing import List, Tuple, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Cores para output
