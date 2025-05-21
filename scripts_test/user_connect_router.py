@@ -5,10 +5,8 @@
 # se comunicar com roteadores que não estão diretamente vinculados.
 
 import os
-import threading
 import time
-import sys
-from typing import List, Tuple, Dict, Any
+from typing import List, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Cores para output
