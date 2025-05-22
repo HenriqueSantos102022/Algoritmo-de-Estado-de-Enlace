@@ -80,6 +80,12 @@ Passo a Passo para executar o trabalho
   make up
 ```
 
+#### ou
+
+```bash
+  docker compose up --build
+```
+
 ##### 4. Tempo de convergência: Após o início dos containers, aguarde um pouco para que as tabelas de roteamento sejam configuradas entre os roteadores.
 
 #### 5. Faça a verificação da tabela de roteamento:
@@ -88,10 +94,22 @@ Passo a Passo para executar o trabalho
   make router-show-tables
 ```
 
+#### ou
+
+```bash
+  python3 scripts_test/router_show_tables.py
+```
+
 #### 6. Teste a conectividade entre roteadores:
 
 ```bash
   make router-connect-router
+```
+
+#### ou
+
+```bash
+  python3 scripts_test/router_connect_router.py
 ```
 
 #### 7. Teste a conectividade entre hosts e roteadores:
@@ -100,10 +118,22 @@ Passo a Passo para executar o trabalho
   make user-connect-router
 ```
 
+#### ou
+
+```bash
+  python3 scripts_test/user_connect_router.py
+```
+
 #### 8. Teste a conectividade entre hosts:
 
 ```bash
   make user-connect-user
+```
+
+#### ou
+
+```bash
+  python3 scripts_test/user_connect_user.py
 ```
 
 #### 9. Para encerrar os containers:
@@ -112,13 +142,24 @@ Passo a Passo para executar o trabalho
   make down
 ```
 
+#### ou
+
+```bash
+  docker compose down
+```
+
 #### 10. Para remover imagens e volumes:
 
 ```bash
   make clear
 ```
 
+#### ou
 
+```bash
+  docker compose down --rmi all --volumes --remove-orphans
+  docker network prune -f
+```
 
 ## Justificativa do protocolo escolhido
 
